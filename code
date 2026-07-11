@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#ffffff;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#0078ff;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:#0078ff;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.button:hover{
+    background:#005fcc;
+}
+
+section{
+    padding:60px 10%;
+    background:white;
+    margin-top:20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:280px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:10px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Computer Hub</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#components">Components</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Computer Hub</h2>
+
+    <p>
+        Computers make our daily lives easier by helping us study, work,
+        communicate, and create amazing things. Learn the basics of computer
+        hardware and technology on this simple website.
+    </p>
+
+    <a href="#components" class="button">Explore</a>
+</section>
+
+<section id="about">
+    <h2>About Computers</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        A computer is an electronic device that accepts data, processes it,
+        stores information, and produces useful results. Computers are used in
+        schools, businesses, hospitals, and homes around the world.
+    </p>
+</section>
+
+<section id="components">
+
+<h2>Main Computer Components</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>CPU</h3>
+<p>
+The Central Processing Unit (CPU) is known as the brain of the computer because
+it performs calculations and executes instructions.
+</p>
+</div>
+
+<div class="card">
+<h3>RAM</h3>
+<p>
+Random Access Memory (RAM) temporarily stores information while programs are
+running, making the computer faster.
+</p>
+</div>
+
+<div class="card">
+<h3>Storage</h3>
+<p>
+Storage devices such as SSDs and HDDs permanently save files, documents,
+photos, and applications.
+</p>
+</div>
+
+<div class="card">
+<h3>GPU</h3>
+<p>
+The Graphics Processing Unit (GPU) creates images, videos, and improves gaming
+performance.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Project Information</h2>
+
+<p style="text-align:center;">
+This website was created as a simple HTML and CSS project for educational
+purposes.
+</p>
+
+<br>
+
+<p style="text-align:center;">
+<strong>Created by:</strong><br>
+Jorge Denmark Garcia
+</p>
+
+</section>
+
+<footer>
+    © 2026 Computer Hub <br><br>
+    Website Created by <strong>Jorge Denmark Garcia</strong>
+</footer>
+
+</body>
+</html>
